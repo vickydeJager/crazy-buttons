@@ -91,7 +91,7 @@ const canDoes = [AnimationAction, AddCrazyButtonAction, RemoveCrazyButtonAction,
 function createCrazyButtons(target) {
     var container = document.getElementsByTagName(target);
 
-    for (let i = 0; i < random(3, 5); i++) { //Math.floor(Math.random() * 5) + 1
+    for (let i = 0; i < Math.floor(Math.random() * 5) + 1; i++) { 
         var btn = document.createElement("button");
 
         btn.innerHTML = "Click me!";
